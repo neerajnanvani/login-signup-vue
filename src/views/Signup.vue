@@ -68,7 +68,6 @@ async function formSubmit() {
     const isFormValidated = validateFields();
 
     if(isFormValidated) {
-        console.log("Validated");
 
        await store.signUpUser({ email: email.value, password: password.value});
        router.push("/")

@@ -29,9 +29,7 @@ const router = useRouter();
 onMounted(() => {
     const user = store.getUser;
 
-    if(user.value === null) {
-        router.push("/login");
-    } else {
+    if(user.value !== null) {
         userEmail.value = user.value.email;
     }
 
