@@ -2,7 +2,7 @@ import Dashboard from "@/views/Dashboard.vue";
 import Signin from "@/views/Signin.vue";
 import Signup from "@/views/Signup.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import { useUserStore } from "@/store/userStore.ts";
+import { useUserStore } from "@/stores/user.ts";
 
 const routes: RouteRecordRaw[] = [
     {

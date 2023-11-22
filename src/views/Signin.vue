@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import CommonForm from '@/components/CommonForm.vue';
-import { useUserStore } from '@/store/userStore';
+import { useUserStore } from '@/stores/user.ts';
 import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -63,4 +63,4 @@ async function formSubmit() {
 
 </script>
 <style scoped>
-</style>
+</style>@/stores/userStore

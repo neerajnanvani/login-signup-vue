@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { useUserStore } from '@/store/userStore';
+import { useUserStore } from '@/stores/user.ts';
 import { useRouter } from 'vue-router';
 import {onMounted, ref} from "vue";
 
@@ -30,7 +30,7 @@ onMounted(() => {
     const user = store.getUser;
 
     if(user.value !== null) {
-        userEmail.value = user.value.email;
+        userEmail.value = String(user.value.email);
     }
 
 });
@@ -43,4 +43,4 @@ function logout() {
     router.push("/login")
 }
 
-</script>
+</script>@/stores/userStore
